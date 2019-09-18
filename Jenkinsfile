@@ -26,11 +26,11 @@ node('master') {
 
 	stage ('Notification'){
 		slackSend color: 'good', message: 'Deployment Sucessful'
-		emailext (
-		      subject: "Job Completed",
-		      body: "Jenkins Pipeline Job for Maven Build got completed !!!",
-		      to: "harmanjot.rajpal@gmail.com"
-		    )
+		//emailext (
+		     // subject: "Job Completed",
+		      //body: "Jenkins Pipeline Job for Maven Build got completed !!!",
+		     // to: "email here"
+		   // )
 	}	
 	
 	
